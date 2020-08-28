@@ -40,9 +40,9 @@
             <div class="feature-details text-center">
                 <div>
                     <span class="mr-1"><i class="fa fa-map-marker"></i> <?php echo $row['location']; ?></span>
-                    <span class="mr-1"><i class="fa fa-sun-o"></i> <?php echo $row['days']; ?> days</span>
-                    <span class="mr-1"><i class="fa fa-moon-o"></i> <?php echo $row['nights']; ?> nights</span>
-                    <span class="mr-1"><i class="fa fa-money"></i> Rs <?php echo $row['price']; ?></span>
+                    <span class="mr-1"><i class="fa fa-sun-o"></i> <?php echo $row['days']; ?> 天</span>
+                    <span class="mr-1"><i class="fa fa-moon-o"></i> <?php echo $row['nights']; ?> 夜</span>
+                    <span class="mr-1"><i class="fa fa-money"></i>  <?php echo $row['price']; ?>元</span>
                 </div>
             </div>
         </div>
@@ -143,36 +143,75 @@
 			<div class="row">
 				<div class="col-md-3">
 					<img src="images/logo.png" class="footer-logo img-fluid">
-					<p class="pt-1 text-justify">Daevak Tours and Travels. A website that provides you with every suitable packages with thrilling prices.</p>
+					<p class="pt-1 text-justify">这是一个可以提供优质旅游景点的网站.</p>
 				</div>
 				<div class="col-md-3">
-					<h5 class="text-capitalize font-weight-bold">Contact</h5>
+					<h5 class="text-capitalize font-weight-bold">联系我们</h5>
 					<div>
-						<i class="fa fa-phone-square"></i>9800000000
+						<i class="fa fa-phone-square"></i>0512-1234567
 					</div>
 					<div>
-						<i class="fa fa-envelope"></i>toursntravels@gmail.com
+						<i class="fa fa-envelope"></i>tour@tour.com
 					</div>
 					<div>
-						<i class="fa fa-home"></i>Kalanki, Kathmandu
+						<i class="fa fa-home"></i>苏州，吴江
 					</div>
 				</div>
 				<div class="col-md-3">
-					<h5 class="text-capitalize font-weight-bold">Follow Us On</h5>
+					<h5 class="text-capitalize font-weight-bold">关注我们</h5>
 					<div>
-						<i class="fa fa-facebook-official"></i>Facebook/Toursntravels
+						<i class="fa fa-weibo"></i>旅游网
 					</div>
 					<div>
-						<i class="fa fa-youtube-play"></i>YouTube/Toursntravels
+						<i class="fa fa-wechat"></i>旅游网
 					</div>
 				</div>
 				<div>
-					<button data-toggle="modal" data-target="#vehiclerentalModal" type="button" class="book-btn">Vehicle Rental</button>
+					<button data-toggle="modal" data-target="#queriemodal" type="button" class="book-btn">留言</button>
+					<div class="modal fade" id="queriemodal" tabindex="-1" role="dialog" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content bg-dark">
+								<div class="modal-header">
+									<h5 class="modal-title">留言</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<form action="./model/addquerie.php" method="POST">
+										<div class="form-group">
+											<label>姓名</label>
+											<input name="name" type="text" class="form-control" placeholder="姓名" required>
+										</div>
+										<div class="form-group">
+											<label>联系电话</label>
+											<input name="phone" type="text" class="form-control" placeholder="联系电话" required>
+										</div>
+										<div class="form-group">
+											<label>邮箱</label>
+											<input name="email" type="email" class="form-control" placeholder="邮箱" required>
+										</div>
+										<div class="form-group">
+											<label>留言 </label>
+											<textarea name="querie" class="form-control"></textarea>
+										</div>
+										<button type="submit" class="btn btn-danger ">发送</button>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<button data-toggle="modal" data-target="#vehiclerentalModal" type="button" class="book-btn">租用汽车</button>
+					
 					<div class="modal fade" id="vehiclerentalModal" tabindex="-1" role="dialog" aria-hidden="true">
 						<div class="modal-dialog" role="document">
 							<div class="modal-content bg-dark">
 								<div class="modal-header">
-									<h5 class="modal-title">Vehicle Rental</h5>
+									<h5 class="modal-title">租用汽车</h5>
 									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 										<span aria-hidden="true">&times;</span>
 									</button>
@@ -180,38 +219,38 @@
 								<div class="modal-body">
 									<form action="./model/vehiclerental.php" method="POST">
 										<div class="form-group">
-											<label>Full Name</label>
-											<input name="name" type="text" class="form-control" placeholder="Enter Full Name" required>
+											<label>姓名</label>
+											<input name="name" type="text" class="form-control" placeholder="输入姓名" required>
 										</div>
 										<div class="form-group">
-											<label>Contact No</label>
-											<input name="phone" type="text" class="form-control" placeholder="Enter Contact No" required>
+											<label>联系电话</label>
+											<input name="phone" type="text" class="form-control" placeholder="联系电话" required>
 										</div>
 										<div class="form-group">
-											<label>Address</label>
-											<input name="address" type="text" class="form-control" placeholder="Enter Address" required>
+											<label>地址</label>
+											<input name="address" type="text" class="form-control" placeholder="输入地址" required>
 										</div>
 										<div class="form-group">
-											<label>Email</label>
-											<input name="email" type="email" class="form-control" placeholder="Enter Email" required>
+											<label>邮箱</label>
+											<input name="email" type="email" class="form-control" placeholder="输入邮箱" required>
 										</div>
 										<div class="form-group">
-											<label>Reservation From</label>
+											<label>开始预定日期</label>
 											<input name="reservation_from" type="date" class="form-control" required>
 										</div>
 										<div class="form-group">
-											<label>Reservation To</label>
+											<label>结束预定日期</label>
 											<input name="reservation_to" type="date" class="form-control" required>
 										</div>
 										<div class="form-group">
-											<label>Note (Optional)</label>
+											<label>备注 (可选)</label>
 											<textarea name="note" class="form-control"></textarea>
 										</div>
-										<button type="submit" class="btn btn-danger ">BOOK</button>
+										<button type="submit" class="btn btn-danger ">预定</button>
 									</form>
 								</div>
 								<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
 								</div>
 							</div>
 						</div>
@@ -221,9 +260,11 @@
 				</div>
 			</div>
 			<hr class="mt-3">
+			
 		</div>
 		<div class="container text-center">
-			<h5 class="font-weight-light">&copy; 2020 Copyright Reserved <br> Travels and Tours</h5>
+			<a href="dashboard/login.php"><h5 class="font-weight-light">管理员登录 <br></h5></a>
+			<h5 class="font-weight-light">&copy; 2020 徐展鹏 G18190230 <br></h5>
 		</div>
 	</section>
 </body>
