@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+.header {
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(https://phpmysql.oss-cn-shanghai.aliyuncs.com/travel/timg.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+.header img {
+  width: 50px;
+  float: left;
+}
+.book-btn {
+  width: 100px;
+  padding-top: 8px 0;
+  outline: none !important;
+  border: 5px solid #800080;
+  border-radius: 50px;
+  background: transparent;
+  color: #fff;
+  float: right;
+  margin-top: 25px;
+}
+.header h1 {
+  padding-top: 230px;
+  padding-bottom: 0px;
+  font-size: 55px;
+}
+.header p {
+  margin: 18px 0px;
+}
+.input-group {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 30px;
+  background: #fff;
+  margin: auto;
+  padding: 2px;
+}
+.form-control {
+  border: 0 !important;
+  border-radius: 30px !important;
+  margin: 2px;
+  box-shadow: none !important;
+}
+.input-group-text {
+  width: 100px;
+  background-image: linear-gradient(#00ff7e, #1f3d90);
+  border: 0 !important;
+  color: #fff !important;
+  padding: 0 25px !important;
+  border-radius: 30px !important;
+  box-shadow: none !important;
+}
+
+/* .features
+{ 
+ 
+} */
+h1 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.feature-img {
+  min-height: 250px;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+.price {
+  /* width: 50px;
+	height: 50px; */
+  background: #ff5722;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50%;
+  padding: 20px 12px 12px 10px;
+  box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
+  position: absolute;
+  left: 20px;
+  bottom: -25px;
+}
+
+.feature-img {
+  position: relative;
+}
+.feature-img img:hover {
+  transform: scale(1.1);
+}
+
+.rating {
+  padding: 3px;
+  float: right;
+  background: #fff;
+  bottom: -1px;
+  right: 0;
+  position: absolute;
+}
+
+.features .fa {
+  font-size: 15px;
+  color: #ff5722;
+}
+
+.feature-details {
+  padding: 20px;
+  text-align: justify;
+}
+
+.feature-details {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.feature-box {
+  box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
+  margin-bottom: 30px;
+}
+
+.gallery {
+  padding: 100px 0;
+  background: #6a0dad;
+}
+.gallery-box img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.gallery-box img:hover {
+  transform: scale(1.1);
+}
+/*.gallery-box h4
+{
+	display: block;
+	color: #fff;
+	text-shadow: -2px 2px 2px #000;
+	font-weight: 600;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}*/
+
+.gallery-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.banner {
+  height: 80%;
+  background-image: url(https://phpmysql.oss-cn-shanghai.aliyuncs.com/travel/timg.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 14%;
+}
+
+.banner-highlights {
+  padding: 70px o;
+  background: black;
+  text-align: center;
+  color: #fff;
+}
+.booking-btn {
+  width: 120px;
+  padding: 8px 0;
+  outline: none !important;
+  border: 2px solid #800080;
+  border-radius: 50px;
+  background: transparent;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.users-feedback {
+  padding: 100px 0;
+}
+
+.footer {
+  background-image: linear-gradient(#2d557d, #9610fd);
+  color: #fff;
+}
+
+.footer-logo {
+  max-height: 50px;
+}
+
+.footer h4 {
+  text-align: left;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.footer p {
+  font-size: 15px;
+  text-align: justify;
+  padding-right: 35px;
+}
+
+.footer .row .fa {
+  padding: 15px;
+  font-size: 15px;
+}
+
+.footer hr {
+  margin-top: 10px;
+  background: #efefef;
+}
+
+.footer h3 {
+  text-align: center;
+}
+
+.footer h3 {
+  text-align: center;
+}
+
+.single-package-img-container {
+  min-height: 350px;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
